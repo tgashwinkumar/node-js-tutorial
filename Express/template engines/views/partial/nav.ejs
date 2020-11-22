@@ -1,0 +1,50 @@
+<nav>
+    <ul class="navMenu">
+        <li></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/contact-us">Contact Us</a></li>
+        
+    </ul>
+</nav>
+
+<style>
+    .navMenu{
+        display: flex;
+        list-style: none;
+    }
+    
+    .navMenu li{
+        
+        padding: 3px 15px 20px 15px;
+        margin: 0 20px ;
+        border-bottom:2px solid whitesmoke;
+        flex: 1;
+        text-align: center;
+    }
+    
+    .navMenu li:first-child{
+        flex:8;
+        border-bottom: 0;
+    }
+    
+    .navMenu li a{
+        text-decoration: none;
+        color: whitesmoke;
+        font-weight: 300;
+        
+    }
+    
+    .navMenu li:hover > a{
+        font-weight:600;
+    }
+    
+    .navMenu li:hover {
+        border-bottom:4px solid whitesmoke;
+        padding: 3px 15px 18px 15px;
+    }
+
+    .navMenu li:first-child:hover {
+        border-bottom:0;
+        padding: 3px 15px 17px 15px;
+    }
+</style>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+</head>
+
+<style>
+    body{
+        margin : 0;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    
+        background-color: rgb(2, 126, 89);
+        font-family: Verdana;
+    }
+    
+    h1{
+        
+        text-transform: uppercase;
+        color: whitesmoke;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 1000;
+        margin-top: 10px;
+    }
+    
+    h2{
+        font-size: 20px;
+        font-weight: 500;
+        color: whitesmoke;
+        margin-left: 150px;
+    }
+    .clan{
+        font-size: 20px;
+        font-weight: 500;
+        color: whitesmoke;
+        margin-left: 150px;
+        list-style:lower-alpha;
+    }
+    a{
+        text-transform: capitalize;
+    }
+</style>
+<body>
+        <%- include('partial/nav.ejs'); -%>
+        <h1>Welcome, <a><%=name%></a></h1>
+        <h2>Name: <a><%= name%></a></h2>
+        <h2>Occupation: <a><%= job%></a></h2>
+        <h2>Age: <%= age%></h2>
+        <h2>Other Clansmen: </h2>
+        <ul class="clan">
+            <% clansmen.forEach((ninja) => { %>
+                <li><a>Uchiha <%= ninja %></a></li>
+            <% }); %>
+        </ul>    
+</body>
+</html>

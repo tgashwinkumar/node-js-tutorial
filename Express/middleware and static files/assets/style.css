@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(9, 113, 145);
+    font-family: Verdana;
+    margin-top: 40px;
+    
+}
+h1 , h2{
+    text-align: center;
+    color: whitesmoke;
+}
+
+h1{
+    text-transform: uppercase;
+}

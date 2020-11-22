@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+        <link href="/assets/style.css" rel = "stylesheet" type="text/css">
+    </head>
+    <style>
+        body{
+            background-color: rgb(50, 109, 27);
+        }
+    </style>
+    <body>
+        <%- include('partial/nav.ejs'); -%>
+        <h1>Contact Successful!</h1>
+        <h2>This is the contact-success page.</h2>
+        <h2>You contacted <%= data.who %>, from the department of <%= data.dept%>.</h2>
+        <h2>Your email is confirmed as <%= data.email %></h2>
+        
+    </body>
+</html>
